@@ -1,5 +1,5 @@
 import XCTest
-import qrframework_part_5
+//import qrframework_part_5
 
 class Tests: XCTestCase {
     

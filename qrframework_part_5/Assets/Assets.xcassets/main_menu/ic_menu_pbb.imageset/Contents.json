@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Atom  Icon  Logo  FIF@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Atom  Icon  Logo  FIF@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Atom  Icon  Logo  FIF@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

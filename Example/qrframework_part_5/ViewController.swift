@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var toQrisButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.toQrisButton.addTarget(self, action: #selector(buttonAction), for: .touchDown)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,3 +24,16 @@ class ViewController: UIViewController {
 
 }
 
+
+extension ViewController{
+    @objc func buttonAction(){
+        func navigateToQR(){
+            guard let vcQR = UIStoryboard(name:QRConstant.qrStoryBoardName, bundle:nil).instantiateViewController(withIdentifier: QRConstant.qrViewControllerIdentifier) as? QRViewController else {
+                print("gagal")
+                return
+            }
+
+            self.navigationController?.popToViewController(vcQR, animated: true)
+        }
+    }
+}
