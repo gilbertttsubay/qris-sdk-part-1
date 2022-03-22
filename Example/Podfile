@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'qrframework_part_5_Example' do
+  pod 'qrframework_part_5', :path => '../'
+
+  target 'qrframework_part_5_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
